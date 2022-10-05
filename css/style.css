@@ -67,8 +67,9 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
     outline: none;
     -webkit-box-shadow: none;
     box-shadow: none; }
+    /* 버튼 색 */
   .btn.btn-primary {
-    background: #1A374D;
+    background: #000000;
     border-color: #1A374D; }
     .btn.btn-primary:hover {
       border-color: #1f425c;
@@ -549,7 +550,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
 
 .hero {
   padding: 7rem 0 10rem 0;
-  background: #6998AB;
+  background-image: url('https://pixabay.com/get/g9118918209fc1929d75f11691800858442e349d965d9706b88f9572c9ba922156ae2aac73f04d9616f154a64fffc60538326bde0720b505b5dbb08f56e0bea32_1920.jpg');
   margin-bottom: 100px; }
   .hero.hero-inner {
     padding: 9rem 0 7rem 0;
