@@ -1,0 +1,25 @@
+------------------------------------------
+ CREDITS
+------------------------------------------
+
+    - Bootstrap 4    -    https://getbootstrap.com
+
+    - Font Awesome   -    https://fontawesome.com
+
+    - Orion Icons    -    https://orioniconlibrary.com/
+
+    - Swiper.js      -    https://swiperjs.com/
+
+
+------------------------------------------
+ IMAGES
+------------------------------------------
+
+    - All image credits go to www.pexels.com and available to use under their license.
+
+
+------------------------------------------
+ CUSTOM MAP
+------------------------------------------
+
+    - Leaflet Maps   -   https://leafletjs.com

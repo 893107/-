@@ -1,637 +1,267 @@
-<!-- /*
-* Template Name: Tour
-* Template Author: Untree.co
-* Tempalte URI: https://untree.co/
-* License: https://creativecommons.org/licenses/by/3.0/
-*/ -->
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
+
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta name="author" content="Untree.co">
-	<link rel="shortcut icon" href="favicon.png">
-
-	<meta name="description" content="" />
-	<meta name="keywords" content="bootstrap, bootstrap4" />
-
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Source+Serif+Pro:wght@400;700&display=swap" rel="stylesheet">
-
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/owl.carousel.min.css">
-	<link rel="stylesheet" href="css/owl.theme.default.min.css">
-	<link rel="stylesheet" href="css/jquery.fancybox.min.css">
-	<link rel="stylesheet" href="fonts/icomoon/style.css">
-	<link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
-	<link rel="stylesheet" href="css/daterangepicker.css">
-	<link rel="stylesheet" href="css/aos.css">
-	<link rel="stylesheet" href="css/style.css">
-
-	<title>Tour Free Bootstrap Template for Travel Agency by Untree.co</title>
+  <meta charset="utf-8">
+  <title>cocoa project
+  </title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="all,follow">
+  <!-- Swiper.js-->
+  <link rel="stylesheet" href="vendor/swiper/swiper-bundle.min.css">
+  <!-- Leaflet-->
+  <link rel="stylesheet" href="vendor/leaflet/leaflet.css">
+  <!-- Google fonts-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,800&amp;display=swap">
+  <!-- theme stylesheet-->
+  <link rel="stylesheet" href="css/style.blue.css" id="theme-stylesheet">
+  <!-- Custom stylesheet - for your changes-->
+  <link rel="stylesheet" href="css/custom.css">
+  <!-- Favicon-->
+  <link rel="shortcut icon" href="img/logo_transparent.png">
 </head>
 
 <body>
-
-
-	<div class="site-mobile-menu site-navbar-target">
-		<div class="site-mobile-menu-header">
-			<div class="site-mobile-menu-close">
-				<span class="icofont-close js-menu-toggle"></span>
-			</div>
-		</div>
-		<div class="site-mobile-menu-body"></div>
-	</div>
-
-	<nav class="site-nav">
-		<div class="container">
-			<div class="site-navigation">
-				<a href="index.html" class="logo m-0">기업 가치 예측 <span class="text-primary"></span></a>
-
-				<ul class="js-clone-nav d-none d-lg-inline-block text-left site-menu float-right">
-					<li class="active"><a href="index.html">메인화면</a></li>
-					<li class="has-children">
-						<a href="#">My 기업</a>
-						<ul class="dropdown">
-							<li><a href="elements.html">회사 정보 확인</a></li>
-							<li><a href="#">재무 정보 등록</a></li>
-							<li class="has-children">
-								<a href="#">Menu Two</a>
-								<ul class="dropdown">
-									<li><a href="#">Sub Menu One</a></li>
-									<li><a href="#">Sub Menu Two</a></li>
-									<li><a href="#">Sub Menu Three</a></li>
-								</ul>
-							</li>
-							<li><a href="#">Menu Three</a></li>
-						</ul>
-					</li>
-					<li><a href="services.html">조회하기</a></li>
-					<!-- <li><a href="about.html">About</a></li> -->
-					<li><a href="contact.html">회원가입</a></li>
-				</ul>
-
-				<a href="#" class="burger ml-auto float-right site-menu-toggle js-menu-toggle d-inline-block d-lg-none light" data-toggle="collapse" data-target="#main-navbar">
-					<span></span>
-				</a>
-
-			</div>
-		</div>
-	</nav>
-
-
-	<div class="hero">
-		<div class="container">
-			<div class="row align-items-center">
-				<div class="col-lg-7">
-					<div class="intro-wrap">
-						<h1 class="mb-5"><span class="d-block">내 회사의 <br>지속적인 성장 가능성을<br> 직접 확인하세요.
-							
-						</span></h1>
-
-						<div class="row">
-							<div class="col-12">
-								<form class="form">
-									<div class="row mb-2">
-										<!-- <div class="col-sm-12 col-md-6 mb-3 mb-lg-0 col-lg-4">
-											<select name="" id="" class="form-control custom-select">
-												<option value="">년도</option>
-												<option value="">Peru</option>
-												<option value="">Japan</option>
-												<option value="">Thailand</option>
-												<option value="">Brazil</option>
-												<option value="">United States</option>
-												<option value="">Israel</option>
-												<option value="">China</option>
-												<option value="">Russia</option>
-											</select>
-										</div> -->
-										<!-- <div class="col-sm-12 col-md-6 mb-3 mb-lg-0 col-lg-5">
-											<input type="text" class="form-control" name="daterange">
-										</div>
-										<div class="col-sm-12 col-md-6 mb-3 mb-lg-0 col-lg-3">
-											<input type="text" class="form-control" placeholder="# of People">
-										</div> -->
-									</div>
-									    
-									<div class="row align-items-center">
-										<div class="col-sm-12 col-md-6 mb-3 mb-lg-0 col-lg-3">
-											<input type="text" class="form-control" placeholder="내 회사명">
-										</div>
-										<div class="col-sm-12 col-md-6 mb-3 mb-lg-0 col-lg-4">
-											<input type="submit" class="btn btn-primary btn-block" value="Search">
-										</div>
-										<div class="col-lg-5">
-											<label class="control control--checkbox mt-3">
-												<span class="caption">Save this search</span>
-												<input type="checkbox" checked="checked" />
-												<div class="control__indicator"></div>
-											</label>
-										</div>
-									</div>
-								</form>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- <div class="col-lg-5">
-					<div class="slides">
-						<img src="images/hero-slider-1.jpg" alt="Image" class="img-fluid active">
-						<img src="images/hero-slider-2.jpg" alt="Image" class="img-fluid">
-						<img src="images/hero-slider-3.jpg" alt="Image" class="img-fluid">
-						<img src="images/hero-slider-4.jpg" alt="Image" class="img-fluid">
-						<img src="images/hero-slider-5.jpg" alt="Image" class="img-fluid">
-					</div>
-				</div> -->
-			</div>
-		</div>
-	</div>
-
-
-	<div class="untree_co-section">
-		<div class="container">
-			<div class="row mb-5 justify-content-center">
-				<div class="col-lg-6 text-center">
-					<h2 class="section-title text-center mb-3">Our Services</h2>
-					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-				</div>
-			</div>
-			<div class="row align-items-stretch">
-				<div class="col-lg-4 order-lg-1">
-					<div class="h-100"><div class="frame h-100"><div class="feature-img-bg h-100" style="background-image: url('images/hero-slider-1.jpg');"></div></div></div>
-				</div>
-
-				<div class="col-6 col-sm-6 col-lg-4 feature-1-wrap d-md-flex flex-md-column order-lg-1" >
-
-					<div class="feature-1 d-md-flex">
-						<div class="align-self-center">
-							<span class="flaticon-house display-4 text-primary"></span>
-							<h3>Beautiful Condo</h3>
-							<p class="mb-0">Even the all-powerful Pointing has no control about the blind texts.</p>
-						</div>
-					</div>
-
-					<div class="feature-1 ">
-						<div class="align-self-center">
-							<span class="flaticon-restaurant display-4 text-primary"></span>
-							<h3>Restaurants & Cafe</h3>
-							<p class="mb-0">Even the all-powerful Pointing has no control about the blind texts.</p>
-						</div>
-					</div>
-
-				</div>
-
-				<div class="col-6 col-sm-6 col-lg-4 feature-1-wrap d-md-flex flex-md-column order-lg-3" >
-
-					<div class="feature-1 d-md-flex">
-						<div class="align-self-center">
-							<span class="flaticon-mail display-4 text-primary"></span>
-							<h3>Easy to Connect</h3>
-							<p class="mb-0">Even the all-powerful Pointing has no control about the blind texts.</p>
-						</div>
-					</div>
-
-					<div class="feature-1 d-md-flex">
-						<div class="align-self-center">
-							<span class="flaticon-phone-call display-4 text-primary"></span>
-							<h3>24/7 Support</h3>
-							<p class="mb-0">Even the all-powerful Pointing has no control about the blind texts.</p>
-						</div>
-					</div>
-
-				</div>
-
-			</div>
-		</div>
-	</div>
-
-	<div class="untree_co-section count-numbers py-5">
-		<div class="container">
-			<div class="row">
-				<div class="col-6 col-sm-6 col-md-6 col-lg-3">
-					<div class="counter-wrap">
-						<div class="counter">
-							<span class="" data-number="9313">0</span>
-						</div>
-						<span class="caption">No. of Travels</span>
-					</div>
-				</div>
-				<div class="col-6 col-sm-6 col-md-6 col-lg-3">
-					<div class="counter-wrap">
-						<div class="counter">
-							<span class="" data-number="8492">0</span>
-						</div>
-						<span class="caption">No. of Clients</span>
-					</div>
-				</div>
-				<div class="col-6 col-sm-6 col-md-6 col-lg-3">
-					<div class="counter-wrap">
-						<div class="counter">
-							<span class="" data-number="100">0</span>
-						</div>
-						<span class="caption">No. of Employees</span>
-					</div>
-				</div>
-				<div class="col-6 col-sm-6 col-md-6 col-lg-3">
-					<div class="counter-wrap">
-						<div class="counter">
-							<span class="" data-number="120">0</span>
-						</div>
-						<span class="caption">No. of Countries</span>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-
-
-	<div class="untree_co-section">
-		<div class="container">
-			<div class="row text-center justify-content-center mb-5">
-				<div class="col-lg-7"><h2 class="section-title text-center">Popular Destination</h2></div>
-			</div>
-
-			<div class="owl-carousel owl-3-slider">
-
-				<div class="item">
-					<a class="media-thumb" href="images/hero-slider-1.jpg" data-fancybox="gallery">
-						<div class="media-text">
-							<h3>Pragser Wildsee</h3>
-							<span class="location">Italy</span>
-						</div>
-						<img src="images/hero-slider-1.jpg" alt="Image" class="img-fluid">
-					</a> 
-				</div>
-
-				<div class="item">
-					<a class="media-thumb" href="images/hero-slider-2.jpg" data-fancybox="gallery">
-						<div class="media-text">
-							<h3>Oia</h3>
-							<span class="location">Greece</span>
-						</div>
-						<img src="images/hero-slider-2.jpg" alt="Image" class="img-fluid">
-					</a> 
-				</div>
-
-				<div class="item">
-					<a class="media-thumb" href="images/hero-slider-3.jpg" data-fancybox="gallery">
-						<div class="media-text">
-							<h3>Perhentian Islands</h3>
-							<span class="location">Malaysia</span>
-						</div>
-						<img src="images/hero-slider-3.jpg" alt="Image" class="img-fluid">
-					</a> 
-				</div>
-
-
-				<div class="item">
-					<a class="media-thumb" href="images/hero-slider-4.jpg" data-fancybox="gallery">
-						<div class="media-text">
-							<h3>Rialto Bridge</h3>
-							<span class="location">Italy</span>
-						</div>
-						<img src="images/hero-slider-4.jpg" alt="Image" class="img-fluid">
-					</a> 
-				</div>
-
-				<div class="item">
-					<a class="media-thumb" href="images/hero-slider-5.jpg" data-fancybox="gallery">
-						<div class="media-text">
-							<h3>San Francisco, United States</h3>
-							<span class="location">United States</span>
-						</div>
-						<img src="images/hero-slider-5.jpg" alt="Image" class="img-fluid">
-					</a> 
-				</div>
-
-				<div class="item">
-					<a class="media-thumb" href="images/hero-slider-1.jpg" data-fancybox="gallery">
-						<div class="media-text">
-							<h3>Lake Thun</h3>
-							<span class="location">Switzerland</span>
-						</div>
-						<img src="images/hero-slider-2.jpg" alt="Image" class="img-fluid">
-					</a> 
-				</div>
-
-			</div>
-
-		</div>
-	</div>
-
-
-	<div class="untree_co-section testimonial-section mt-5">
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-lg-7 text-center">
-					<h2 class="section-title text-center mb-5">Testimonials</h2>
-
-					<div class="owl-single owl-carousel no-nav">
-						<div class="testimonial mx-auto">
-							<figure class="img-wrap">
-								<img src="images/person_2.jpg" alt="Image" class="img-fluid">
-							</figure>
-							<h3 class="name">Adam Aderson</h3>
-							<blockquote>
-								<p>&ldquo;There live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.&rdquo;</p>
-							</blockquote>
-						</div>
-
-						<div class="testimonial mx-auto">
-							<figure class="img-wrap">
-								<img src="images/person_3.jpg" alt="Image" class="img-fluid">
-							</figure>
-							<h3 class="name">Lukas Devlin</h3>
-							<blockquote>
-								<p>&ldquo;There live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.&rdquo;</p>
-							</blockquote>
-						</div>
-
-						<div class="testimonial mx-auto">
-							<figure class="img-wrap">
-								<img src="images/person_4.jpg" alt="Image" class="img-fluid">
-							</figure>
-							<h3 class="name">Kayla Bryant</h3>
-							<blockquote>
-								<p>&ldquo;There live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.&rdquo;</p>
-							</blockquote>
-						</div>
-
-					</div>
-
-				</div>
-			</div>
-		</div>
-	</div>
-
-
-	<div class="untree_co-section">
-		<div class="container">
-			<div class="row justify-content-center text-center mb-5">
-				<div class="col-lg-6">
-					<h2 class="section-title text-center mb-3">Special Offers &amp; Discounts</h2>
-					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-6 col-sm-6 col-md-6 col-lg-3 mb-4 mb-lg-0">
-					<div class="media-1">
-						<a href="#" class="d-block mb-3"><img src="images/hero-slider-1.jpg" alt="Image" class="img-fluid"></a>
-						<span class="d-flex align-items-center loc mb-2">
-							<span class="icon-room mr-3"></span>
-							<span>Italy</span>
-						</span>
-						<div class="d-flex align-items-center">
-							<div>
-								<h3><a href="#">Rialto Mountains</a></h3>
-								<div class="price ml-auto">
-									<span>$520.00</span>
-								</div>
-							</div>
-							
-						</div>
-						
-					</div>
-				</div>
-				<div class="col-6 col-sm-6 col-md-6 col-lg-3 mb-4 mb-lg-0">
-					<div class="media-1">
-						<a href="#" class="d-block mb-3"><img src="images/hero-slider-2.jpg" alt="Image" class="img-fluid"></a>
-						<span class="d-flex align-items-center loc mb-2">
-							<span class="icon-room mr-3"></span>
-							<span>United States</span>
-						</span>
-						<div class="d-flex align-items-center">
-							<div>
-								<h3><a href="#">San Francisco</a></h3>
-								<div class="price ml-auto">
-									<span>$520.00</span>
-								</div>
-							</div>
-							
-						</div>
-						
-					</div>
-				</div>
-				<div class="col-6 col-sm-6 col-md-6 col-lg-3 mb-4 mb-lg-0">
-					<div class="media-1">
-						<a href="#" class="d-block mb-3"><img src="images/hero-slider-3.jpg" alt="Image" class="img-fluid"></a>
-						<span class="d-flex align-items-center loc mb-2">
-							<span class="icon-room mr-3"></span>
-							<span>Malaysia</span>
-						</span>
-						<div class="d-flex align-items-center">
-							<div>
-								<h3><a href="#">Perhentian Islands</a></h3>
-								<div class="price ml-auto">
-									<span>$750.00</span>
-								</div>
-							</div>
-							
-						</div>
-						
-					</div>
-				</div>
-				<div class="col-6 col-sm-6 col-md-6 col-lg-3 mb-4 mb-lg-0">
-					<div class="media-1">
-						<a href="#" class="d-block mb-3"><img src="images/hero-slider-4.jpg" alt="Image" class="img-fluid"></a>
-
-						<span class="d-flex align-items-center loc mb-2">
-							<span class="icon-room mr-3"></span>
-							<span>Switzerland</span>
-						</span>
-
-						<div class="d-flex align-items-center">
-							<div>
-								<h3><a href="#">Lake Thun</a></h3>
-								<div class="price ml-auto">
-									<span>$520.00</span>
-								</div>
-							</div>
-							
-						</div>
-						
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div class="untree_co-section">
-		<div class="container">
-			<div class="row justify-content-between align-items-center">
-				
-				<div class="col-lg-6">
-					<figure class="img-play-video">
-						<a id="play-video" class="video-play-button" href="https://www.youtube.com/watch?v=mwtbEGNABWU" data-fancybox>
-							<span></span>
-						</a>
-						<img src="images/hero-slider-2.jpg" alt="Image" class="img-fluid rounded-20">
-					</figure>
-				</div>
-
-				<div class="col-lg-5">
-					<h2 class="section-title text-left mb-4">Take a look at Tour Video</h2>
-					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-
-					<p class="mb-4">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-
-					<ul class="list-unstyled two-col clearfix">
-						<li>Outdoor recreation activities</li>
-						<li>Airlines</li>
-						<li>Car Rentals</li>
-						<li>Cruise Lines</li>
-						<li>Hotels</li>
-						<li>Railways</li>
-						<li>Travel Insurance</li>
-						<li>Package Tours</li>
-						<li>Insurance</li>
-						<li>Guide Books</li>
-					</ul>
-
-					<p><a href="#" class="btn btn-primary">Get Started</a></p>
-
-					
-				</div>
-			</div>
-		</div>
-	</div>
-
-	
-	
-	<div class="py-5 cta-section">
-		<div class="container">
-			<div class="row text-center">
-				<div class="col-md-12">
-					<h2 class="mb-2 text-white">Lets you Explore the Best. Contact Us Now</h2>
-					<p class="mb-4 lead text-white text-white-opacity">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, fugit?</p>
-					<p class="mb-0"><a href="booking.html" class="btn btn-outline-white text-white btn-md font-weight-bold">Get in touch</a></p>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div class="site-footer">
-		<div class="inner first">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-6 col-lg-4">
-						<div class="widget">
-							<h3 class="heading">About Tour</h3>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-						</div>
-						<div class="widget">
-							<ul class="list-unstyled social">
-								<li><a href="#"><span class="icon-twitter"></span></a></li>
-								<li><a href="#"><span class="icon-instagram"></span></a></li>
-								<li><a href="#"><span class="icon-facebook"></span></a></li>
-								<li><a href="#"><span class="icon-linkedin"></span></a></li>
-								<li><a href="#"><span class="icon-dribbble"></span></a></li>
-								<li><a href="#"><span class="icon-pinterest"></span></a></li>
-								<li><a href="#"><span class="icon-apple"></span></a></li>
-								<li><a href="#"><span class="icon-google"></span></a></li>
-							</ul>
-						</div>
-					</div>
-					<div class="col-md-6 col-lg-2 pl-lg-5">
-						<div class="widget">
-							<h3 class="heading">Pages</h3>
-							<ul class="links list-unstyled">
-								<li><a href="#">Blog</a></li>
-								<li><a href="#">About</a></li>
-								<li><a href="#">Contact</a></li>
-							</ul>
-						</div>
-					</div>
-					<div class="col-md-6 col-lg-2">
-						<div class="widget">
-							<h3 class="heading">Resources</h3>
-							<ul class="links list-unstyled">
-								<li><a href="#">Blog</a></li>
-								<li><a href="#">About</a></li>
-								<li><a href="#">Contact</a></li>
-							</ul>
-						</div>
-					</div>
-					<div class="col-md-6 col-lg-4">
-						<div class="widget">
-							<h3 class="heading">Contact</h3>
-							<ul class="list-unstyled quick-info links">
-								<li class="email"><a href="#">mail@example.com</a></li>
-								<li class="phone"><a href="#">+1 222 212 3819</a></li>
-								<li class="address"><a href="#">43 Raymouth Rd. Baltemoer, London 3910</a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-
-
-		<div class="inner dark">
-			<div class="container">
-				<div class="row text-center">
-					<div class="col-md-8 mb-3 mb-md-0 mx-auto">
-						<p>Copyright &copy;<script>document.write(new Date().getFullYear());</script>. All Rights Reserved. &mdash; Designed with love by <a href="https://untree.co" class="link-highlight">Untree.co</a> <!-- License information: https://untree.co/license/ -->Distributed By <a href="https://themewagon.com" target="_blank" >ThemeWagon</a>
-						</p>
-					</div>
-					
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div id="overlayer"></div>
-	<div class="loader">
-		<div class="spinner-border" role="status">
-			<span class="sr-only">Loading...</span>
-		</div>
-	</div>
-
-	<script src="js/jquery-3.4.1.min.js"></script>
-	<script src="js/popper.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/owl.carousel.min.js"></script>
-	<script src="js/jquery.animateNumber.min.js"></script>
-	<script src="js/jquery.waypoints.min.js"></script>
-	<script src="js/jquery.fancybox.min.js"></script>
-	<script src="js/aos.js"></script>
-	<script src="js/moment.min.js"></script>
-	<script src="js/daterangepicker.js"></script>
-
-	<script src="js/typed.js"></script>
-	<script>
-		$(function() {
-			var slides = $('.slides'),
-			images = slides.find('img');
-
-			images.each(function(i) {
-				$(this).attr('data-id', i + 1);
-			})
-
-			var typed = new Typed('.typed-words', {
-				strings: ["San Francisco."," Paris."," New Zealand.", " Maui.", " London."],
-				typeSpeed: 80,
-				backSpeed: 80,
-				backDelay: 4000,
-				startDelay: 1000,
-				loop: true,
-				showCursor: true,
-				preStringTyped: (arrayPos, self) => {
-					arrayPos++;
-					console.log(arrayPos);
-					$('.slides img').removeClass('active');
-					$('.slides img[data-id="'+arrayPos+'"]').addClass('active');
-				}
-
-			});
-		})
-	</script>
-
-	<script src="js/custom.js"></script>
-
+  <!-- navbar-->
+  <header class="header">
+    <nav class="navbar navbar-expand-lg navbar-light py-3 bg-white">
+      <div class="container"><a class="navbar-brand" href="index.html">COCOA</a>
+        <button class="navbar-toggler navbar-toggler-end" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item mx-2">
+              <!-- Link--><a class="nav-link active" href="index.html">메인화면</a>
+            </li>
+            <li class="nav-item mx-2">
+              <!-- Link--><a class="nav-link" href="services.html">정보 조회</a>
+            </li>
+            <li class="nav-item mx-2">
+              <!-- Link--><a class="nav-link" href="mypage.html">내 정보</a>
+            </li>
+            <li class="nav-item mx-2">
+              <!-- Link--><a class="nav-link" href="join.html">회원가입</a>
+            </li>
+            <li class="nav-item mx-2">
+              <!-- Link--><a class="nav-link" href="login.html">로그인</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- Hero Slider -->
+  <section>
+    <div class="swiper hero-slider">
+      <div class="swiper-wrapper">
+        <!-- Hero Slide-->
+        <div class="swiper-slide hero-slide bg-cover bg-center py-5 h-auto"
+          style="background: url(https://cdn.quv.kr/e4izhz0w3/us/zJdv0vCjl4E_1920.jpg)">
+          <div class="container text-white py-5 index-forward">
+            <div class="row">
+              <div class="col-lg-7">
+                <h1>기업의<br>
+                  성장 가능성을<br>
+                  지금 확인해보세요.</h1>
+                <div class="lineHorizontalContainer line-left">
+                  <div class="lineHorizontalFirst" data-width="100"
+                    style="border-bottom: 2px solid rgb(255, 255, 255); width: 100%;"></div>
+                  <div class="lineHorizontalSecond"></div>
+                </div>
+                <p class="lead"><br>COCOA에서는 인공지능이 귀사의 데이터를 실시간으로 분석하여 상위 기업과의 <br>차이점을 비교 분석하여 제공합니다.</p>
+                <!-- <a class="btn btn-primary text-white" href="#!">Read More</a> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+  <!-- Services Section -->
+  <section class="py-5 bg-light">
+    <div class="container py-5">
+      <header class="text-center mb-5">
+        <div class="row">
+          <div class="col-lg-7 mx-auto">
+            <h2 class="text-uppercase">외부 지표 정보</h2>
+            <p class="text-muted">한국 은행과 한국 수출입 은행에서 제공한 API를 통해 수집한 정보이며 매일 갱신됩니다.</p>
+          </div>
+        </div>
+      </header>
+      <div class="row text-center gy-4">
+        <div class="col-lg-4">
+          <div class="shadow-sm box">
+            <div class="p-4 border bg-white">
+              <h3 class="h5"> <a class="reset-anchor" href="#!">환율</a></h3>
+              <p class="text-sm text-muted">1$ = 1417.81₩</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="shadow-sm box">
+            <div class="p-4 border bg-white">
+              <h3 class="h5"> <a class="reset-anchor" href="#!">경제 통계 지표</a></h3>
+              <p class="text-sm text-muted">100.32</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="shadow-sm box">
+            <div class="p-4 border bg-white">
+              <h3 class="h5"> <a class="reset-anchor" href="#!">금리</a></h3>
+              <p class="text-sm text-muted">3.00</p>
+              <!--<a class="btn btn-primary btn-sm text-white" href="#!">Read more</a> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Works Section -->
+  <section class="py-5">
+    <div class="container py-5">
+      <header class="text-center mb-5">
+        <div class="row">
+          <div class="col-lg-7 mx-auto">
+            <h4 class="text-uppercase">COCOA에서는 기업을 위한 다양한 서비스를 제공합니다.</h4>
+            </p>
+          </div>
+        </div>
+      </header>
+      <div class="row text-center gy-4">
+        <div class="col-lg-4">
+          <div class="shadow-sm box">
+            <div class="position-relative overflow-hidden d-block">
+              <div class="box-overlay box-overlay-primary"><a class="d-block w-100 h-100" href="#!"></a></div><img
+                class="w-100"
+                src="https://images.unsplash.com/photo-1634097537825-b446635b2f7f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTYzOHwwfDF8c2VhcmNofDEzfHxjaGFydHxlbnwwfHx8fDE2NTM3MDU5ODk&ixlib=rb-1.2.1&q=80&w=1080"
+                alt=".." />
+            </div>
+            <div class="p-4 bg-dark text-white">
+              <!-- <h3 class="h5"> <a class="reset-anchor" href="#!">House renovation</a></h3> -->
+              <p class="small mb-0">기업의 가치 변화 예측 및 상위 기업과의 차이 분석</p>
+            </div><a class="btn btn-primary text-white w-100" href="#!">바로가기</a>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="shadow-sm box">
+            <div class="position-relative overflow-hidden d-block">
+              <div class="box-overlay box-overlay-primary"><a class="d-block w-100 h-100" href="#!"></a></div><img
+                class="w-100" src="https://cdn.quv.kr/e4izhz0w3/us/yA_NYcRhHNE_1920.jpg" alt=".." />
+            </div>
+            <div class="p-4 bg-dark text-white">
+              <!-- <h3 class="h5"> <a class="reset-anchor" href="#!">Kitchen remodelling</a></h3> -->
+              <p class="small mb-0">업종별, 지역별 순위, 내 기업의 상위 % 확인</p>
+            </div><a class="btn btn-primary text-white w-100" href="#!">바로가기</a>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="shadow-sm box">
+            <div class="position-relative overflow-hidden d-block">
+              <div class="box-overlay box-overlay-primary"><a class="d-block w-100 h-100" href="#!"></a></div><img
+                class="w-100" src="https://cdn.quv.kr/e4izhz0w3/us/KdeqA3aTnBY_1920.jpg" alt=".." />
+            </div>
+            <div class="p-4 bg-dark text-white">
+              <!-- <h3 class="h5"> <a class="reset-anchor" href="#!">Home repair</a></h3> -->
+              <p class="small mb-0">기업 정보를 바탕으로 신청 가능한 중소기업 지원 정보 제공</p>
+            </div><a class="btn btn-primary text-white w-100" href="#!">바로가기</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="text-white bg-cover bg-center" style="background: url(//cdn.quv.kr/e4izhz0w3%2Fus%2FHONJP8DyiSM_1920.jpg)">
+    <div class="dark-overlay">
+      <div class="overlay-content">
+        <div class="container py-5">
+          <div class="row py-5">
+            <div class="col-lg-4 col-md-6"><img class="mb-4" src="img/logo_transparent.png" alt="" width="210">
+      
+            </div>
+            <div class="col-lg-2 col-md-6">
+              <h6 class="text-uppercase text-primary mt-3 mb-4">서비스 <span class="text-white">바로가기</span></h6>
+              <ul class="list-unstyled">
+                <li class="mb-2"><a class="footer-link" href="index.html">메인화면</a></li>
+                <li class="mb-2"><a class="footer-link" href="services.html">정보 조회</a></li>
+                <li class="mb-2"><a class="footer-link" href="mypage.html">내 정보</a></li>
+                <li class="mb-2"><a class="footer-link" href="join.html">회원가입</a></li>
+                <li class="mb-2"><a class="footer-link" href="login.html">로그인</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-2 col-md-2">
+              <h6 class="text-uppercase text-primary mt-3 mb-4">COCOA <span class="text-white">Team</span></h6>
+              <ul class="list-unstyled">
+                <li class="mb-2">이태형</li>
+                <li class="mb-2">김세진</li>
+                <li class="mb-2">신재훈</li>
+                <li class="mb-2">임가영</li>
+                <li class="mb-2">홍석표</li>
+              </ul>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <p class="text-light text-sm mb-4">사이트 내 오류 사항이나 문의는 아래의 주소로 연락 부탁드립니다.</p>
+              <p class="mb-1"><i class="fas me-3 text-primary fa-fw fa-envelope"></i><span
+                  class="text-sm">cocoateam8910@gmail.com</span></p>
+              <p class="mb-1"><i class="fas me-3 text-primary fa-fw fa-mobile"></i><span class="text-sm">+535 421 895
+                  6523</span></p>
+              <p class="mb-1"><i class="fas me-3 text-primary fa-fw fa-map-marker-alt"></i><span class="text-sm">1https://github.com/893107/Project2.git</span></p>
+            </div>
+            
+          </div>
+        </div>
+        <div class="container text-center">
+          <div class="border-top py-4">
+            <!-- You are completely free to use this template for your personal use or as a work for your client as long as you keep the link at the template footer pointing to our partner and us.-->
+            <!-- If you would prefer removing the backlink from the theme footer, please purchase the attribution-free license at the theme page at https://bootstrapious.com/attribution-free-license.-->
+            <p class="mb-0 text-white text-sm">&copy; All rights reserved. Template designed by <a
+                href="https://bootstrapious.com/p/renovat-bootstrap-construction-template">Bootstrapious</a>. </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- JavaScript files-->
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="vendor/leaflet/leaflet.js"></script>
+  <script src="js/front.js"></script>
+  <script>
+    function injectSvgSprite(path) {
+
+      var ajax = new XMLHttpRequest();
+      ajax.open("GET", path, true);
+      ajax.send();
+      ajax.onload = function (e) {
+        var div = document.createElement("div");
+        div.className = 'd-none';
+        div.innerHTML = ajax.responseText;
+        document.body.insertBefore(div, document.body.childNodes[0]);
+      }
+    }
+    // this is set to BootstrapTemple website as you cannot 
+    // inject local SVG sprite (using only 'icons/orion-svg-sprite.svg' path)
+    // while using file:// protocol
+    // pls don't forget to change to your domain :)
+    injectSvgSprite('https://bootstraptemple.com/files/icons/orion-svg-sprite.svg');
+
+  </script>
+  <!-- FontAwesome CSS - loading as last, so it doesn't block rendering-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </body>
+
+<footer>
+ <div class="qv-text text-center" style="position: relative;" contenteditable="false">
+  <div class="border-top py-4">
+    <p class="mb-0 text-black text-sm">Team COCOA
+    </p>
+  </div>
+ </div>
+</footer>
+
 
 </html>

@@ -1,0 +1,6 @@
+/* your styles go here */
+#div1 {
+    display : flex;
+    justify-content: center;
+    align-items : center;
+}
