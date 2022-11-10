@@ -57,8 +57,8 @@ function drawChart() {
   
         var materialOptions = {
           chart: {
-            title: 'Population of Largest U.S. Cities',
-            subtitle: 'Based on most recent and previous census data'
+            title: '',
+            subtitle: ''
           },
           hAxis: {
             title: 'Total Population',

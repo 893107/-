@@ -20,7 +20,28 @@
   <link rel="stylesheet" href="css/custom.css">
   <!-- Favicon-->
   <link rel="shortcut icon" href="img/logo_transparent.png">
+
 </head>
+<style>
+  @import url(//fonts.googleapis.com/earlyaccess/jejugothic.css);
+
+  h1,
+  .h1,
+  h2,
+  .h2,
+  h3,
+  .h3,
+  h4,
+  .h4,
+  h5,
+  .h5,
+  h6,
+  .h6,
+  p,
+  .p {
+    font-family: 'Jeju Gothic', sans-serif;
+  }
+</style>
 
 <body>
   <!-- navbar-->
@@ -89,28 +110,31 @@
           </div>
         </div>
       </header>
-      <div class="row text-center gy-4">
+      <div class="row text-center gy-6">
         <div class="col-lg-4">
-          <div class="shadow-sm box">
-            <div class="p-4 border bg-white">
-              <h3 class="h5"> <a class="reset-anchor" href="#!">환율</a></h3>
-              <p class="text-sm text-muted">1$ = 1417.81₩</p>
+          <div class="">
+            <div class="">
+              <h3 class="h4"> <a class="reset-anchor" href="#!">환율</a></h3>
+              <h2 id="count"></h2>
+              <!-- <p class="customsize">1$ = 1417.81₩</p> -->
             </div>
           </div>
         </div>
         <div class="col-lg-4">
-          <div class="shadow-sm box">
-            <div class="p-4 border bg-white">
-              <h3 class="h5"> <a class="reset-anchor" href="#!">경제 통계 지표</a></h3>
-              <p class="text-sm text-muted">100.32</p>
+          <div class="">
+            <div class="">
+              <h3 class="h4">경제 통계 지표</h3>
+              <h2 id="count2"></h2>
+              <!-- <p class="customsize">100.32</p> -->
             </div>
           </div>
         </div>
         <div class="col-lg-4">
-          <div class="shadow-sm box">
-            <div class="p-4 border bg-white">
-              <h3 class="h5"> <a class="reset-anchor" href="#!">금리</a></h3>
-              <p class="text-sm text-muted">3.00</p>
+          <div class="">
+            <div class="">
+              <h3 class="h4">금리</h3>
+              <h2 id="count3"></h2>
+              <!-- <p class="customsize">3.00</p> -->
               <!--<a class="btn btn-primary btn-sm text-white" href="#!">Read more</a> -->
             </div>
           </div>
@@ -135,15 +159,14 @@
         <div class="col-lg-4">
           <div class="shadow-sm box">
             <div class="position-relative overflow-hidden d-block">
-              <div class="box-overlay box-overlay-primary"><a class="d-block w-100 h-100" href="#!"></a></div><img
-                class="w-100"
-                src="https://images.unsplash.com/photo-1634097537825-b446635b2f7f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTYzOHwwfDF8c2VhcmNofDEzfHxjaGFydHxlbnwwfHx8fDE2NTM3MDU5ODk&ixlib=rb-1.2.1&q=80&w=1080"
-                alt=".." />
+              <div class="box-overlay box-overlay-primary" id="main"></div>
+              <img class="w-100"
+                src="https://images.unsplash.com/photo-1634097537825-b446635b2f7f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTYzOHwwfDF8c2VhcmNofDEzfHxjaGFydHxlbnwwfHx8fDE2NTM3MDU5ODk&ixlib=rb-1.2.1&q=80&w=1080"/>
             </div>
             <div class="p-4 bg-dark text-white">
               <!-- <h3 class="h5"> <a class="reset-anchor" href="#!">House renovation</a></h3> -->
               <p class="small mb-0">기업의 가치 변화 예측 및 상위 기업과의 차이 분석</p>
-            </div><a class="btn btn-primary text-white w-100" href="#!">바로가기</a>
+            </div><a class="btn btn-primary text-white w-100" href="services.html">바로가기</a>
           </div>
         </div>
         <div class="col-lg-4">
@@ -174,13 +197,14 @@
     </div>
   </section>
 
-  <footer class="text-white bg-cover bg-center" style="background: url(//cdn.quv.kr/e4izhz0w3%2Fus%2FHONJP8DyiSM_1920.jpg)">
+  <footer class="text-white bg-cover bg-center"
+    style="background: url(//cdn.quv.kr/e4izhz0w3%2Fus%2FHONJP8DyiSM_1920.jpg)">
     <div class="dark-overlay">
       <div class="overlay-content">
         <div class="container py-5">
           <div class="row py-5">
             <div class="col-lg-4 col-md-6"><img class="mb-4" src="img/logo_transparent.png" alt="" width="210">
-      
+
             </div>
             <div class="col-lg-2 col-md-6">
               <h6 class="text-uppercase text-primary mt-3 mb-4">서비스 <span class="text-white">바로가기</span></h6>
@@ -208,9 +232,10 @@
                   class="text-sm">cocoateam8910@gmail.com</span></p>
               <p class="mb-1"><i class="fas me-3 text-primary fa-fw fa-mobile"></i><span class="text-sm">+535 421 895
                   6523</span></p>
-              <p class="mb-1"><i class="fas me-3 text-primary fa-fw fa-map-marker-alt"></i><span class="text-sm">1https://github.com/893107/Project2.git</span></p>
+              <p class="mb-1"><i class="fas me-3 text-primary fa-fw fa-map-marker-alt"></i><span
+                  class="text-sm">1https://github.com/893107/Project2.git</span></p>
             </div>
-            
+
           </div>
         </div>
         <div class="container text-center">
@@ -242,25 +267,63 @@
         document.body.insertBefore(div, document.body.childNodes[0]);
       }
     }
-    // this is set to BootstrapTemple website as you cannot 
-    // inject local SVG sprite (using only 'icons/orion-svg-sprite.svg' path)
-    // while using file:// protocol
-    // pls don't forget to change to your domain :)
     injectSvgSprite('https://bootstraptemple.com/files/icons/orion-svg-sprite.svg');
 
   </script>
-  <!-- FontAwesome CSS - loading as last, so it doesn't block rendering-->
+
+  <script>
+    let countBox = document.querySelector('#count'),
+      count = 0;
+
+    let counting = setInterval(function () {
+      if (count == 1417) {
+        clearInterval(counting);
+        return false;
+      }
+      count += 1;
+      countBox.innerHTML = "1$ = " + new Intl.NumberFormat().format(count) + ".81₩";
+    }, 1);
+  </script>
+
+<script>
+  let countBox2 = document.querySelector('#count2'),
+    count2 = 0;
+
+  let counting2 = setInterval(function () {
+    if (count2 == 100) {
+      clearInterval(counting2);
+      return false;
+    }
+    count2 += 1;
+    countBox2.innerHTML = + new Intl.NumberFormat().format(count2) + ".32";
+  }, 50);
+</script>
+
+<script>
+  let countBox3 = document.querySelector('#count3'),
+    count3 = 0;
+
+  let counting3 = setInterval(function () {
+    if (count3 == 3) {
+      clearInterval(counting3);
+      return false;
+    }
+    count3 += 1;
+    countBox3.innerHTML = + new Intl.NumberFormat().format(count3) + ".00%";
+  }, 1000);
+</script>
+
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
     integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </body>
 
 <footer>
- <div class="qv-text text-center" style="position: relative;" contenteditable="false">
-  <div class="border-top py-4">
-    <p class="mb-0 text-black text-sm">Team COCOA
-    </p>
+  <div class="qv-text text-center" style="position: relative;" contenteditable="false">
+    <div class="border-top py-4">
+      <p class="mb-0 text-black text-sm">Team COCOA
+      </p>
+    </div>
   </div>
- </div>
 </footer>
 
 
