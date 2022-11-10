@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Renovat | Bootstrap construction template</title>
+    <title>정보조회 | COCOA project</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="all,follow">
@@ -54,12 +54,8 @@
       <div class="dark-overlay dark-overlay-lighter py-5">
         <div class="overlay-content">
           <div class="container text-center py-5">
-            <h1 class="text-white">Services</h1>
+            <h1 class="text-white">정보 조회</h1>
             <nav class="d-flex justify-content-center" aria-label="breadcrumb">
-              <ol class="breadcrumb bg-none mb-0">
-                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Services</li>
-              </ol>
             </nav>
           </div>
         </div>
@@ -69,7 +65,16 @@
     <section class="py-5 bg-light">
       <div class="container py-5">
         <div class="row gy-4">
-          <div class="col-lg-4"><a class="reset-anchor box" href="#!">
+          <div class="text-center mt-5">
+            <p class="lead fw-bold mb-4">정보 분석 결과 </p>
+          </div>
+          <div class="text-center mt-5" id="div1">
+            <div id="line_top_x"></div>
+          </div>
+          <div class="text-center mt-5">
+            <p class="lead fw-bold mb-4">We only select general contractors who have gone through our in-depth vetting process. </p><a class="btn btn-outline-primary" href="#!">Start your project</a>
+          </div>
+          <!-- <div class="col-lg-4"><a class="reset-anchor box" href="#!">
               <div class="box card border-0">
                 <div class="card-body shadow-sm p-0">
                   <div class="position-relative overflow-hidden d-block">
@@ -139,7 +144,7 @@
               </div></a>
           </div>
         </div>
-      </div>
+      </div> -->
     </section>
     <!-- Divider Section -->
     <div class="container bg-light">
@@ -149,10 +154,9 @@
             <div class="container px-lg-5">
               <div class="row align-items-center">
                 <div class="col-lg-7 text-center text-lg-start">
-                  <h2 class="h3 mb-3">Trusted Construction <span class="text-primary">Since 1889</span></h2>
-                  <p class="text-sm mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                  <h2 class="h3 mb-3">데이터 분석 비교</h2>
+                  <p class="text-sm mb-0">1티어 기업과의 재무 데이터 차이점 분석</p>
                 </div>
-                <div class="col-lg-5 text-center text-lg-end"><a class="btn btn-outline-light text-white" href="#!">Get a quote</a></div>
               </div>
             </div>
           </div>
@@ -163,7 +167,7 @@
     <section class="py-5 bg-light">
       <div class="container py-5">
         <div class="row gy-4">
-          <div class="col-lg-4"><a class="reset-anchor box" href="#!">
+          <!-- <div class="col-lg-4"><a class="reset-anchor box" href="#!">
               <div class="box card border-0">
                 <div class="card-body shadow-sm p-0">
                   <div class="position-relative overflow-hidden d-block">
@@ -232,13 +236,15 @@
                 </div>
               </div></a>
           </div>
+        </div> -->
+        
+        <div class="text-center mt-5">
+          <p class="lead fw-bold mb-4">정보 분석 결과 </p>
         </div>
         <div class="text-center mt-5" id="div1">
           <div id="line_top_x"></div>
         </div>
-        <div class="text-center mt-5">
-          <p class="lead fw-bold mb-4">We only select general contractors who have gone through our in-depth vetting process. </p><a class="btn btn-outline-primary" href="#!">Start your project</a>
-        </div>
+        <div id="chart_div"></div>
       </div>
     </section>
 
@@ -296,6 +302,8 @@
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="vendor/swiper/swiper-bundle.min.js"></script>
     <script src="vendor/leaflet/leaflet.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        
     <script src="js/front.js"></script>
     <script src="js/chart.js"></script>
     <script>
